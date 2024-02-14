@@ -1,0 +1,46 @@
+
+State Machine - |main|I2S:inst22|State
+Name State.Ender State.SendR State.SendL State.Starter1 State.Starter 
+State.Starter 0 0 0 0 0 
+State.Starter1 0 0 0 1 1 
+State.SendL 0 0 1 0 1 
+State.SendR 0 1 0 0 1 
+State.Ender 1 0 0 0 1 
+
+State Machine - |main|MSC:inst21|State
+Name State.Svol2 State.Svol1 State.Sgo1 State.SendI2C_St6 State.SendI2C_A6 State.SendI2C_St5 State.SendI2C_A5 State.SendI2C_St4 State.SendI2C_A4 State.SendI2C_St3 State.SendI2C_A3 State.SendI2C_St2 State.SendI2C_A2 State.SendI2C_St1 State.SendI2C_A1 State.SendI2C_St State.SendI2C_A State.Starter 
+State.Starter 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.SendI2C_A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.SendI2C_St 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.SendI2C_A1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.SendI2C_St1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.SendI2C_A2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.SendI2C_St2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.SendI2C_A3 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.SendI2C_St3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.SendI2C_A4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.SendI2C_St4 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.SendI2C_A5 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.SendI2C_St5 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State.SendI2C_A6 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.SendI2C_St6 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.Sgo1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.Svol1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.Svol2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |main|reset_dem:inst30|CS
+Name CS.State_End CS.State_Wait CS.IDLE 
+CS.IDLE 0 0 0 
+CS.State_Wait 0 1 1 
+CS.State_End 1 0 1 
+
+State Machine - |main|I2C:inst20|State
+Name State.Ender State.SendEnd State.Ack2 State.SendData State.Ack1 State.SendIns State.SendAddr State.Starter 
+State.Starter 0 0 0 0 0 0 0 0 
+State.SendAddr 0 0 0 0 0 0 1 1 
+State.SendIns 0 0 0 0 0 1 0 1 
+State.Ack1 0 0 0 0 1 0 0 1 
+State.SendData 0 0 0 1 0 0 0 1 
+State.Ack2 0 0 1 0 0 0 0 1 
+State.SendEnd 0 1 0 0 0 0 0 1 
+State.Ender 1 0 0 0 0 0 0 1 

@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "I2C_SDAT",
+					"strict" : false
+				},
+				{
+					"name" : "I2C_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "AUD_DACDAT",
+					"strict" : false
+				},
+				{
+					"name" : "AUD_DACLRCK",
+					"strict" : false
+				},
+				{
+					"name" : "AUD_XCK",
+					"strict" : false
+				},
+				{
+					"name" : "LED_BLINK",
+					"strict" : false
+				},
+				{
+					"name" : "LED_R",
+					"strict" : false
+				},
+				{
+					"name" : "MASTER_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "MASTER_R",
+					"strict" : false
+				},
+				{
+					"name" : "SEL1",
+					"strict" : false
+				},
+				{
+					"name" : "SEL0",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

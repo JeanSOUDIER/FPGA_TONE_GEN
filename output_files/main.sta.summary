@@ -1,0 +1,421 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'MASTER_CLK'
+Slack : -4.285
+TNS   : -206.408
+
+Type  : Slow 1100mV 85C Model Setup 'DIV:inst23|temp'
+Slack : -4.205
+TNS   : -174.794
+
+Type  : Slow 1100mV 85C Model Setup 'FREQ_DIV:inst24|temp'
+Slack : -4.136
+TNS   : -44.144
+
+Type  : Slow 1100mV 85C Model Setup 'FREQ_DIV:inst26|temp'
+Slack : -3.649
+TNS   : -262.976
+
+Type  : Slow 1100mV 85C Model Setup 'I2S:inst22|SIDx2'
+Slack : -2.016
+TNS   : -18.803
+
+Type  : Slow 1100mV 85C Model Hold 'MASTER_CLK'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'I2S:inst22|SIDx2'
+Slack : 0.544
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'DIV:inst23|temp'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'FREQ_DIV:inst26|temp'
+Slack : 0.677
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'FREQ_DIV:inst24|temp'
+Slack : 0.761
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'FREQ_DIV:inst24|temp'
+Slack : -3.539
+TNS   : -71.768
+
+Type  : Slow 1100mV 85C Model Recovery 'DIV:inst23|temp'
+Slack : -3.366
+TNS   : -132.300
+
+Type  : Slow 1100mV 85C Model Recovery 'I2S:inst22|SIDx2'
+Slack : -3.298
+TNS   : -32.813
+
+Type  : Slow 1100mV 85C Model Recovery 'FREQ_DIV:inst26|temp'
+Slack : -3.288
+TNS   : -53.446
+
+Type  : Slow 1100mV 85C Model Recovery 'MASTER_CLK'
+Slack : -0.919
+TNS   : -59.205
+
+Type  : Slow 1100mV 85C Model Removal 'MASTER_CLK'
+Slack : 0.737
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'DIV:inst23|temp'
+Slack : 0.823
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'FREQ_DIV:inst26|temp'
+Slack : 2.410
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'I2S:inst22|SIDx2'
+Slack : 2.823
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'FREQ_DIV:inst24|temp'
+Slack : 2.903
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'MASTER_CLK'
+Slack : -0.394
+TNS   : -49.511
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FREQ_DIV:inst26|temp'
+Slack : -0.394
+TNS   : -44.175
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DIV:inst23|temp'
+Slack : -0.394
+TNS   : -29.871
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FREQ_DIV:inst24|temp'
+Slack : -0.394
+TNS   : -11.138
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'I2S:inst22|SIDx2'
+Slack : -0.394
+TNS   : -5.230
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'MSC:inst21|St_CPT'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'FREQ_DIV:inst24|temp'
+Slack : -4.265
+TNS   : -44.224
+
+Type  : Slow 1100mV 0C Model Setup 'MASTER_CLK'
+Slack : -4.170
+TNS   : -198.790
+
+Type  : Slow 1100mV 0C Model Setup 'DIV:inst23|temp'
+Slack : -4.130
+TNS   : -169.980
+
+Type  : Slow 1100mV 0C Model Setup 'FREQ_DIV:inst26|temp'
+Slack : -3.682
+TNS   : -263.782
+
+Type  : Slow 1100mV 0C Model Setup 'I2S:inst22|SIDx2'
+Slack : -1.967
+TNS   : -18.848
+
+Type  : Slow 1100mV 0C Model Hold 'MASTER_CLK'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Slow 1100mV 0C Model Hold 'I2S:inst22|SIDx2'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'DIV:inst23|temp'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'FREQ_DIV:inst26|temp'
+Slack : 0.677
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'FREQ_DIV:inst24|temp'
+Slack : 0.762
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'FREQ_DIV:inst24|temp'
+Slack : -3.598
+TNS   : -73.316
+
+Type  : Slow 1100mV 0C Model Recovery 'DIV:inst23|temp'
+Slack : -3.464
+TNS   : -134.273
+
+Type  : Slow 1100mV 0C Model Recovery 'I2S:inst22|SIDx2'
+Slack : -3.412
+TNS   : -33.984
+
+Type  : Slow 1100mV 0C Model Recovery 'FREQ_DIV:inst26|temp'
+Slack : -3.375
+TNS   : -55.067
+
+Type  : Slow 1100mV 0C Model Recovery 'MASTER_CLK'
+Slack : -0.830
+TNS   : -52.814
+
+Type  : Slow 1100mV 0C Model Removal 'MASTER_CLK'
+Slack : 0.685
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'DIV:inst23|temp'
+Slack : 0.774
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'FREQ_DIV:inst26|temp'
+Slack : 2.515
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'I2S:inst22|SIDx2'
+Slack : 2.918
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'FREQ_DIV:inst24|temp'
+Slack : 3.029
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'MASTER_CLK'
+Slack : -0.394
+TNS   : -54.577
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FREQ_DIV:inst26|temp'
+Slack : -0.394
+TNS   : -44.868
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DIV:inst23|temp'
+Slack : -0.394
+TNS   : -29.116
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FREQ_DIV:inst24|temp'
+Slack : -0.394
+TNS   : -10.951
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'I2S:inst22|SIDx2'
+Slack : -0.394
+TNS   : -5.149
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'MSC:inst21|St_CPT'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'MASTER_CLK'
+Slack : -2.447
+TNS   : -93.283
+
+Type  : Fast 1100mV 85C Model Setup 'DIV:inst23|temp'
+Slack : -2.231
+TNS   : -97.599
+
+Type  : Fast 1100mV 85C Model Setup 'FREQ_DIV:inst24|temp'
+Slack : -1.994
+TNS   : -20.266
+
+Type  : Fast 1100mV 85C Model Setup 'FREQ_DIV:inst26|temp'
+Slack : -1.756
+TNS   : -123.845
+
+Type  : Fast 1100mV 85C Model Setup 'I2S:inst22|SIDx2'
+Slack : -0.923
+TNS   : -7.556
+
+Type  : Fast 1100mV 85C Model Hold 'MASTER_CLK'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'I2S:inst22|SIDx2'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'DIV:inst23|temp'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'FREQ_DIV:inst26|temp'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'FREQ_DIV:inst24|temp'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'FREQ_DIV:inst24|temp'
+Slack : -1.738
+TNS   : -34.584
+
+Type  : Fast 1100mV 85C Model Recovery 'DIV:inst23|temp'
+Slack : -1.698
+TNS   : -71.994
+
+Type  : Fast 1100mV 85C Model Recovery 'FREQ_DIV:inst26|temp'
+Slack : -1.560
+TNS   : -24.802
+
+Type  : Fast 1100mV 85C Model Recovery 'I2S:inst22|SIDx2'
+Slack : -1.500
+TNS   : -14.947
+
+Type  : Fast 1100mV 85C Model Recovery 'MASTER_CLK'
+Slack : -0.230
+TNS   : -8.114
+
+Type  : Fast 1100mV 85C Model Removal 'MASTER_CLK'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'DIV:inst23|temp'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'FREQ_DIV:inst26|temp'
+Slack : 1.244
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'I2S:inst22|SIDx2'
+Slack : 1.422
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'FREQ_DIV:inst24|temp'
+Slack : 1.511
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'MASTER_CLK'
+Slack : -0.085
+TNS   : -7.367
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DIV:inst23|temp'
+Slack : -0.065
+TNS   : -1.002
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FREQ_DIV:inst26|temp'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FREQ_DIV:inst24|temp'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'I2S:inst22|SIDx2'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'MSC:inst21|St_CPT'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'MASTER_CLK'
+Slack : -2.024
+TNS   : -74.714
+
+Type  : Fast 1100mV 0C Model Setup 'DIV:inst23|temp'
+Slack : -1.958
+TNS   : -84.358
+
+Type  : Fast 1100mV 0C Model Setup 'FREQ_DIV:inst24|temp'
+Slack : -1.919
+TNS   : -17.898
+
+Type  : Fast 1100mV 0C Model Setup 'FREQ_DIV:inst26|temp'
+Slack : -1.665
+TNS   : -116.575
+
+Type  : Fast 1100mV 0C Model Setup 'I2S:inst22|SIDx2'
+Slack : -0.843
+TNS   : -6.770
+
+Type  : Fast 1100mV 0C Model Hold 'MASTER_CLK'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Fast 1100mV 0C Model Hold 'I2S:inst22|SIDx2'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'FREQ_DIV:inst26|temp'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'DIV:inst23|temp'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'FREQ_DIV:inst24|temp'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'FREQ_DIV:inst24|temp'
+Slack : -1.647
+TNS   : -33.048
+
+Type  : Fast 1100mV 0C Model Recovery 'DIV:inst23|temp'
+Slack : -1.619
+TNS   : -66.442
+
+Type  : Fast 1100mV 0C Model Recovery 'FREQ_DIV:inst26|temp'
+Slack : -1.494
+TNS   : -23.959
+
+Type  : Fast 1100mV 0C Model Recovery 'I2S:inst22|SIDx2'
+Slack : -1.475
+TNS   : -14.702
+
+Type  : Fast 1100mV 0C Model Recovery 'MASTER_CLK'
+Slack : -0.103
+TNS   : -1.973
+
+Type  : Fast 1100mV 0C Model Removal 'MASTER_CLK'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'DIV:inst23|temp'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'FREQ_DIV:inst26|temp'
+Slack : 1.245
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'I2S:inst22|SIDx2'
+Slack : 1.404
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'FREQ_DIV:inst24|temp'
+Slack : 1.501
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'MASTER_CLK'
+Slack : -0.086
+TNS   : -7.617
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DIV:inst23|temp'
+Slack : -0.009
+TNS   : -0.024
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FREQ_DIV:inst26|temp'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FREQ_DIV:inst24|temp'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'I2S:inst22|SIDx2'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'MSC:inst21|St_CPT'
+Slack : 0.455
+TNS   : 0.000
+
+------------------------------------------------------------

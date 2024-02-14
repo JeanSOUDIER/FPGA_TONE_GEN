@@ -1,0 +1,39 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include "system.h"
+#include <stdio.h>
+
+void *sdram;
+void *gsensor;
+
+int main()
+{
+  printf("Hello from Nios II!\n");
+  sdram = ONCHIP_SRAM_BASE;
+  gsensor = GSENSOR_8BIT_DATA_BASE;
+  int cnt = 0;
+  int envoi[2];
+  while(1) {
+	 envoi[0] = (int)(*(int *) sdram);  //16
+	 envoi[1] = (int)(*(int *) gsensor);
+	 printf("%d %d\n",envoi[0], envoi[1]);
+	 //fflush(stdout);
+	 *(int *)gsensor = envoi[0];
+	 usleep(100*1000);
+  }
+  return 0;
+}

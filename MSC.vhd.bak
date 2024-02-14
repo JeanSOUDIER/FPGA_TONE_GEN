@@ -1,0 +1,78 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity MSC is
+	port (
+		CLK, RST, A_I2C : in std_logic;
+		DATA_VOL : in std_logic_vector(7 downto 0);
+		DATA_I2C : out std_logic_vector(7 downto 0);
+		St_I2C, St_CPT, St_I2S : out std_logic
+	);
+end entity;
+
+architecture dfl of MSC is
+type t_State is (Starter, SendI2C_A, SendI2C_St, Sgo1, Sgo2, Svol1, Svol2, Ender);
+signal State : t_State;
+begin
+	process(CLK, RST)
+	variable Cpte : integer range 0 to 31 := 0;
+	begin
+		if (RST = '0') then
+			St_I2C <= '0';
+			St_CPT <= '0';
+			St_I2S <= '0';
+			State <= Starter;
+			DATA_I2C <= "00000000";
+		else
+			if (rising_edge(CLK)) then
+				case State is
+					when Starter =>
+						St_I2C <= '0';
+						St_CPT <= '0';
+						St_I2S <= '0';
+						DATA_I2C <= "00000000";
+						State <= SendI2C_A;
+					when SendI2C_A =>
+						St_I2C <= '0';
+						St_CPT <= '0';
+						St_I2S <= '0';
+						DATA_I2C <= "00000010";
+						State <= SendI2C_St;
+					when SendI2C_St =>
+						St_I2C <= '1';
+						St_CPT <= '0';
+						St_I2S <= '0';
+						DATA_I2C <= "00000010";
+						if(A_I2C = '1') then
+							State <= Sgo1;
+						else
+							State <= SendI2C_St;
+						end if;
+					when Sgo1 =>
+						St_I2C <= '0';
+						St_CPT <= '1';
+						St_I2S <= '0';
+						DATA_I2C <= "00000010";
+						State <= Svol1;
+					when Svol1 =>
+						St_I2C <= '0';
+						St_CPT <= '0';
+						St_I2S <= '1';
+						DATA_I2C <= DATA_VOL;
+						State <= Svol2;
+					when Svol2 =>
+						St_I2C <= '0';
+						St_CPT <= '0';
+						St_I2S <= '1';
+						DATA_I2C <= DATA_VOL;
+						if(A_I2C = '1') then
+							State <= Svol1;
+						else
+							State <= Svol2;
+						end if;
+				end case;
+			end if;
+		end if;
+	end process;
+end architecture;

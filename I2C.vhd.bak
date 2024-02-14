@@ -1,0 +1,68 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity I2C is
+	generic(constant ADDR : integer := 1);
+	port (
+		CLK, RST, Vi : in std_logic;
+		DATA : in std_logic_vector(7 downto 0);
+		S, Vs, CLKs : out std_logic
+	);
+end entity;
+
+architecture dfl of I2C is
+type t_State is (Starter, SendAddr, SendData, Ender);
+signal State : t_State;
+begin
+	process(CLK, RST)
+	variable Cpte : integer range 0 to 7 := 0;
+	begin
+		if (RST = '0') then
+			Vs <= '0';
+			State <= Starter;
+		else
+			if(State = SendAddr) or (State = SendData) then
+				CLKs <= CLK;
+			end if;
+			if (rising_edge(CLK)) then
+				case State is
+					when Starter =>
+						Vs <= '0';
+						S <= '0';
+						CLKs <= '0';
+						if(Vi = '1') then
+							State <= SendAddr;
+						end if;
+					when SendAddr =>
+						Vs <= '0';
+						if(Cpte < 7) then
+							S <= shift_right(unsigned(ADDR),unsigned(Cpte));
+							Cpte := Cpte+1;
+						else
+							S <= shift_right(unsigned(ADDR),7);
+							Cpte := 0;
+							State <= SendData;
+						end if;
+					when SendData =>
+						Vs <= '0';
+						if(Cpte < 7) then
+							S <= shift_right(unsigned(DATA),unsigned(Cpte));
+							Cpte := Cpte+1;
+						else
+							S <= shift_right(unsigned(DATA),7);
+							Cpte := 0;
+							State <= Ender;
+						end if;
+					when Ender =>
+						Vs <= '1';
+						S <= '0';
+						CLKs <= '0';
+						if(Vi = '0') then
+							State <= Starter;
+						end if;
+				end case;
+			end if;
+		end if;
+	end process;
+end architecture;
